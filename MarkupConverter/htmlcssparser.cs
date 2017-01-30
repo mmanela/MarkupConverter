@@ -370,6 +370,8 @@ namespace MarkupConverter
                         color = styleValue.Substring(startIndex, nextIndex - startIndex);
                     }
                 }
+                //Commented by Sachin for converting rgb color to hex and return
+                /*
                 else if (styleValue.Substring(nextIndex, 3).ToLower() == "rbg")
                 {
                     //  Implement real rgb() color parsing
@@ -382,6 +384,16 @@ namespace MarkupConverter
                         nextIndex++; // to skip ')'
                     }
                     color = "gray"; // return bogus color
+                }
+                */
+                //Added by Sachin for converting rgb color to hex and return
+                else if (styleValue.Substring(nextIndex, 3).ToLower() == "rgb")
+                {
+                    //  Implement real rgb() color parsing
+                    startIndex = 4;
+                    string temp_color = styleValue.Substring(startIndex, styleValue.Length - 1 - startIndex);
+                    string[] rgb = temp_color.Split(',');
+                    color = "#" + (byte.Parse(rgb[0])).ToString("X2") + (byte.Parse(rgb[1])).ToString("X2") + (byte.Parse(rgb[2])).ToString("X2");
                 }
                 else if (Char.IsLetter(character))
                 {
