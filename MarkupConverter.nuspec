@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>S:\Workspace\Git-Migrator\MarkupConverter</id>
+    <id>MarkupConverter</id>
     <version>1.0.0</version>
     <authors>mfigueroa</authors>
     <owners>mfigueroa</owners>
