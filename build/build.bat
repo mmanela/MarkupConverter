@@ -20,4 +20,4 @@ mkdir Build
 mkdir Build\lib
 mkdir Build\lib\net45
 
-%nuget% pack "..\MarkupConverter.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
+%nuget% pack "MarkupConverter.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
