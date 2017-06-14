@@ -1,8 +1,5 @@
-﻿using System;
-using System.IO;
-using System.Text;
+﻿using System.IO;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Documents;
 
 namespace MarkupConverter
@@ -20,11 +17,10 @@ namespace MarkupConverter
 
         private static string ConvertRtfToXaml(string rtfText)
         {
-            var richTextBox = new RichTextBox();
+
             if (string.IsNullOrEmpty(rtfText)) return "";
-
-            var textRange = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
-
+            var flowDocument = new FlowDocument();
+            var textRange = new TextRange(flowDocument.ContentStart, flowDocument.ContentEnd);
             //Create a MemoryStream of the Rtf content
 
             using (var rtfMemoryStream = new MemoryStream())
@@ -43,7 +39,7 @@ namespace MarkupConverter
             using (var rtfMemoryStream = new MemoryStream())
             {
 
-                textRange = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
+                textRange = new TextRange(flowDocument.ContentStart, flowDocument.ContentEnd);
                 textRange.Save(rtfMemoryStream, DataFormats.Xaml);
                 rtfMemoryStream.Seek(0, SeekOrigin.Begin);
                 using (var rtfStreamReader = new StreamReader(rtfMemoryStream))
