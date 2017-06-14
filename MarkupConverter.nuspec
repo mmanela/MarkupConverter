@@ -5,16 +5,18 @@
     <version>1.0.0</version>
     <authors>mfigueroa</authors>
     <owners>mfigueroa</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/figuemon/MarkupConverter</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package description</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>This package provides a library to convert from RTF to Html and vice versa</description>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>RTF HTML Converter</tags>
     <dependencies>
       <dependency id="SampleDependency" version="1.0" />
     </dependencies>
   </metadata>
+  <files>
+	<file src="MarkupConverter\bin\$configuration$\MarkupConverter.dll" target="lib\net45\" />
+  </files>
 </package>
