@@ -49,7 +49,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>MarkupConverter.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>MarkupConverter.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -97,5 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MarkupConverter.pfx" />
+    <None Include="MarkupConverter.snk" />
   </ItemGroup>
 </Project>
