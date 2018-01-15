@@ -12,9 +12,6 @@
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>RTF HTML Converter</tags>
-    <dependencies>
-      <dependency id="SampleDependency" version="1.0" />
-    </dependencies>
   </metadata>
   <files>
 	<file src="MarkupConverter\bin\$configuration$\MarkupConverter.dll" target="lib\net45\" />
