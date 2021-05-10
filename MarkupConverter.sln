@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupConverter", "MarkupConverter\MarkupConverter.csproj", "{DC692379-518F-4241-9BBA-4E3F4A9BCE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkupConverterNETCore", "MarkupConverterNETCore\MarkupConverterNETCore.csproj", "{31E41FDC-7F0F-4756-AE97-C7E0931B2911}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{DC692379-518F-4241-9BBA-4E3F4A9BCE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC692379-518F-4241-9BBA-4E3F4A9BCE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC692379-518F-4241-9BBA-4E3F4A9BCE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E41FDC-7F0F-4756-AE97-C7E0931B2911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E41FDC-7F0F-4756-AE97-C7E0931B2911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E41FDC-7F0F-4756-AE97-C7E0931B2911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E41FDC-7F0F-4756-AE97-C7E0931B2911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDA3B154-7B33-4C11-8936-6EB364DF14E8}
 	EndGlobalSection
 EndGlobal
